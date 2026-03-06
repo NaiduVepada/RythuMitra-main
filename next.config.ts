@@ -27,13 +27,15 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  turbopack: {
-    rules: {
-      "*.{jsx,tsx}": {
-        loaders: [LOADER]
+  ...(process.env.NODE_ENV === 'development' && {
+    turbopack: {
+      rules: {
+        "*.{jsx,tsx}": {
+          loaders: [LOADER]
+        }
       }
     }
-  }
+  })
 };
 
 export default nextConfig;

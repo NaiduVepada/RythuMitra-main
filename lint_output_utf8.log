@@ -1,0 +1,59 @@
+﻿
+> app@0.1.0 lint
+> next lint
+
+node.exe : 
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (:String) [],    
+ RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+./src/visual-edits/comp
+onent-tagger-loader.js
+3:23  Error: 'exports' 
+is not defined.  
+no-undef
+4:1  Error: 'exports' 
+is not defined.  
+no-undef
+5:18  Error: 'require' 
+is not defined.  
+no-undef
+6:24  Error: 'require' 
+is not defined.  
+no-undef
+7:25  Error: 'require' 
+is not defined.  
+no-undef
+8:14  Error: 'require' 
+is not defined.  
+no-undef
+286:13  Error: 
+Unexpected lexical 
+declaration in case 
+block.  
+no-case-declarations
+386:35  Error: 
+'process' is not 
+defined.  no-undef
+
+info  - Need to 
+disable some ESLint 
+rules? Learn more 
+here: https://nextjs.or
+g/docs/app/api-referenc
+e/config/eslint#disabli
+ng-rules

@@ -282,7 +282,7 @@ const extractLiteralValue = (node) => {
             return node.value;
         case 'BooleanLiteral':
             return node.value;
-        case 'ObjectExpression':
+        case 'ObjectExpression': {
             const obj = {};
             for (const prop of node.properties) {
                 if (prop.type === 'ObjectProperty' && !prop.computed) {
@@ -291,6 +291,7 @@ const extractLiteralValue = (node) => {
                 }
             }
             return obj;
+        }
         case 'ArrayExpression':
             return node.elements.map((el) => extractLiteralValue(el));
         default:

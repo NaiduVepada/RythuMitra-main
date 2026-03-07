@@ -4,7 +4,6 @@ import path from "node:path";
 const LOADER = path.resolve(import.meta.dirname || "", 'src/visual-edits/component-tagger-loader.js');
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
   compress: true,
   poweredByHeader: false,
   images: {
